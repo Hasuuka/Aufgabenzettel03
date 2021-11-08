@@ -1,9 +1,15 @@
 #include "player.h"
 
-Player::Player(int lifePoints, int x, int y) : DynamicGameEntity(lifePoints, x, y)
-    ,GameEntity(x, y){}
+Player::Player(int lifePoints, int x, int y, double healingPoints) : DynamicGameEntity(lifePoints, x, y)
+    ,GameEntity(x, y), m_healingPoints(healingPoints){}
 
 
-void Player::heal(){
-    m_lifePoints+=10;
+double Player::getHealingPoints() const
+{
+    return m_healingPoints;
+}
+
+void Player::setHealingPoints(double newHealingPoints)
+{
+    m_healingPoints = newHealingPoints;
 }

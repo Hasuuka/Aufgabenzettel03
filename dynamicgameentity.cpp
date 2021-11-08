@@ -20,9 +20,9 @@ void DynamicGameEntity::setLifePoints(double newLifePoints)
     m_lifePoints = newLifePoints;
 }
 
-void DynamicGameEntity::move(int x, int y)
+void DynamicGameEntity::moveTo(int x, int y)
 {
-     m_v.x += x;
-     m_v.y += y;
+     m_v.x = x;
+     m_v.y = y;
 }
 

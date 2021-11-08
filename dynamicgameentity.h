@@ -16,7 +16,7 @@ public:
     void setLifePoints(double newLifePoints);
 protected:
     double m_lifePoints;
-    void move(int x, int y);
+    void moveTo(int x, int y);
 };
 
 #endif // DYNAMICGAMEENTITY_H

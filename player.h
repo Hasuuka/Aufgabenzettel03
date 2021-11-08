@@ -6,9 +6,13 @@
 class Player : public DynamicGameEntity
 {
 public:
-    Player(int lifePoints, int x, int y);
+    Player(int lifePoints, int x, int y, double healingPoints);
+    double getHealingPoints() const;
+    void setHealingPoints(double newHealingPoints);
+
 protected:
-    void heal();
+    double m_healingPoints;
+
 };
 
 #endif // PLAYER_H

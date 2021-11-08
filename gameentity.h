@@ -13,7 +13,8 @@ class GameEntity
 public:
     GameEntity(int x, int y);
 
-    const Vector2 &v() const;
+
+    const Vector2 &getV() const;
 
 protected:
     Vector2 m_v;
