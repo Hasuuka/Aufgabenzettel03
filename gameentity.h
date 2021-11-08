@@ -10,9 +10,10 @@ struct Vector2{
 class GameEntity
 {
 
-
 public:
-    GameEntity::GameEntity(int x, int y);
+    GameEntity(int x, int y);
+
+    const Vector2 &v() const;
 
 protected:
     Vector2 m_v;

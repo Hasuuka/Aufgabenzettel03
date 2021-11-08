@@ -4,4 +4,4 @@
 using namespace std;
 
 Tree::Tree(bool destroyable, int x, int y)
-    :StaticGameEntity(destroyable, x, y){}
+     :StaticGameEntity(destroyable, x, y), GameEntity(x,y){}

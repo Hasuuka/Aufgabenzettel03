@@ -11,19 +11,11 @@ class StaticGameEntity : virtual public GameEntity
 public:
     StaticGameEntity(bool destroyable, int x, int y);
 
-    Vector2 getV()const{
-            return GameEntity::getV();
-        }
-
-    void setV(Vector2 v){
-            GameEntity::setV(v);
-        }
+    bool destroyable() const;
+    void setDestroyable(bool newDestroyable);
 
 protected:
     bool m_destroyable;
-
-
-
 };
 
 #endif // STATICGAMEENTITY_H

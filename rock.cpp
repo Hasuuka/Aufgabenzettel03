@@ -5,5 +5,6 @@
 
 using namespace std;
 
-Rock::Rock(bool destroyable, int x, int y, int sharpness)
-    :StaticGameEntity(destroyable, x, y), m_sharpness(sharpness){}
+
+Rock::Rock(int sharpness, bool destroyable, int x, int y)
+     :StaticGameEntity(destroyable, x, y), GameEntity(x,y), m_sharpness(sharpness){}

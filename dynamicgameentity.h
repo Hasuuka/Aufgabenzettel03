@@ -12,6 +12,8 @@ class DynamicGameEntity : virtual public GameEntity
 public:
     DynamicGameEntity(int lifePoints, int x, int y);
 
+    double lifePoints() const;
+    void setLifePoints(double newLifePoints);
 protected:
     double m_lifePoints;
     void move(int x, int y);

@@ -5,9 +5,11 @@
 
 using namespace std;
 
-class Rock : public StaticGameEntity {
+class Rock : public StaticGameEntity
+{
+
 public:
-    Rock(bool destroyable, int x, int y, int sharpness);
+    Rock(int sharpness, bool destroyable, int x, int y);
 
     int getSharpness() const {
         return m_sharpness;
@@ -17,16 +19,8 @@ public:
         m_sharpness = s;
     }
 
-    Vector2 getV()const{
-            return GameEntity::getV();
-        }
-
-    void setV(Vector2 v){
-            GameEntity::setV(v);
-        }
-
 protected:
-    int m_sharpness
+    int m_sharpness;
 };
 
 #endif // ROCK_H
