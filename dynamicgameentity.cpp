@@ -16,6 +16,6 @@ void move(int x, int y)
     GameEntity::setV(v);
 
     GameEntity::setX(x);
-    GameEntity::setY(y);
+    GameEntity::setY(y);//test
 
 }
