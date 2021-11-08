@@ -5,10 +5,10 @@
 class StaticGameEntity : virtual public GameEntity
 {
 public:
-    StaticGameEntity();
+    StaticGameEntity(bool destroyable, int x, int y);
 
 protected:
-    bool destroyable;
+    bool m_destroyable;
 
 };
 

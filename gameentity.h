@@ -20,7 +20,7 @@ public:
 
     };
 
-    static void setV(Vector2 v){
+    void setV(Vector2 v){
         m_v = v;
     }
 
@@ -29,10 +29,10 @@ public:
         m_v.y = y;
     };
 
-    int getX() const;
-    static void setX(int newX);
-    int getY() const;
-    static void setY(int newY);
+    //int getX() const;
+    //static void setX(int newX);
+    //int getY() const;
+    //static void setY(int newY);
 
 protected:
     Vector2 m_v;
