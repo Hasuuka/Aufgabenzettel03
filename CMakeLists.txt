@@ -5,4 +5,7 @@ project(Aufgabenzettel3 LANGUAGES CXX)
 set(CMAKE_CXX_STANDARD 11)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
 
-add_executable(Aufgabenzettel3 main.cpp)
+add_executable(Aufgabenzettel3 main.cpp
+    gameentity.cpp
+    staticgameentity.cpp
+    )
