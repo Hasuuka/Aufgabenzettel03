@@ -15,14 +15,6 @@ public:
 protected:
     double m_lifePoints;
     void move(int x, int y);
-
-    Vector2 getV()const{
-            return GameEntity::getV();
-        }
-
-    void setV(Vector2 v){
-            GameEntity::setV(v);
-        }
 };
 
 #endif // DYNAMICGAMEENTITY_H
