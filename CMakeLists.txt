@@ -9,4 +9,5 @@ add_executable(Aufgabenzettel3 main.cpp
     gameentity.cpp
     staticgameentity.cpp
     dynamicgameentity.cpp
+    tree.cpp
     )
