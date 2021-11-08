@@ -3,7 +3,6 @@
 
 
 
-
 int Vector2::getY() const
 {
     return y;

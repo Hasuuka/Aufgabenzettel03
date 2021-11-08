@@ -1,6 +1,6 @@
 #include "dynamicgameentity.h"
 #include "gameentity.h"
-#include <iostram>
+#include <iostream>
 
 using namespace std;
 
